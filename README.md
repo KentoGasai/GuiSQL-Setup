@@ -28,10 +28,3 @@ cd F:\GitLab\gui-sql\installer
 powershell -ExecutionPolicy Bypass -File .\build-installer.ps1 -Version 1.2.0
 ```
 Выход: `installer\output\1.2.0\GuiSqlApp-Setup-1.2.0.exe`
-
-## Конфигурация
-`GuiSqlApp\appsettings.json` содержит профили баз (хост/порт/база).  
-Логины/пароли к БД задаются в UI и сохраняются локально через DPAPI.
-
-## Безопасность
-Локальные данные (пользователи приложения и учётки БД) зашифрованы DPAPI, привязаны к текущему Windows‑пользователю.
